@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 10px;
+    background-color: pink;
+}
+
+header, footer{
+    height: 20vh;
+    background: aqua;
+}
+
+header, footer, article, nav, aside{
+    padding: 1em;
+    margin: 10px;
+}
+
+#main{
+    display: flex;
+    flex: 1;
+}
+
+#main > aside{
+    background-color: rgb(200, 34, 34);
+    flex: 1;
+    order: 1;
+
+}
+
+#main article{
+    flex: 0 0 70vw;
+}
+
+#main > nav{
+    background-color: rgb(156, 230, 240);
+    order: 3;
+}
+
+#main > article{
+    background-color: blue;
+    order: 2;
+
+}
+
+#main > aside,article{
+    flex-direction: row-reverse;
+}
+
+.container{
+    display: flex;
+    align-items: flex-end;
+    float: left;
+}
+
+img{
+    height: 18vh;
+    margin-left: 50px;  
+    margin-right: 70px; 
+}

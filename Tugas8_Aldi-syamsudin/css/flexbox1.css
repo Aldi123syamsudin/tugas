@@ -1,0 +1,36 @@
+.item1 { grid-area: header;}
+.item2 { grid-area: nav;}
+.item3 { grid-area: article;}
+.item4 { grid-area: aside;}
+.item5 { grid-area: footer;}
+
+.container{
+    display: grid;
+    grid-template-areas: 
+       'nav header header header header header'
+       'nav article article article article aside'
+       'nav footer footer footer footer footer';
+    min-height: 100vh;
+}
+
+.item1{
+    background-color: khaki;
+    height: 20vh;
+}
+
+.item2{
+    background-color: pink;
+}
+
+.item3{
+    height: 60vh;
+}
+
+.item4{
+    background-color: aqua;
+}
+
+.item5{
+    background-color: khaki;
+    height: 20vh;
+}
