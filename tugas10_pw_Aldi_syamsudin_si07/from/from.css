@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.form{
+    width: 400px;
+    background-color: white;
+    padding: 20px;
+    text-transform: uppercase;
+}
+.control{
+    margin: 20px 0;;
+}
+
+.control label{
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.control input{
+    display: block;
+    width: 100%;
+    padding: 10px;
+}
+
+.control small{
+    font-size: 10px;
+    color: red;
+    visibility: hidden;
+}
+
+
+
+

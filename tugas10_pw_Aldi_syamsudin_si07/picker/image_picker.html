@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Picker</title>
+    <script>
+        function gambar(){
+            let drop_img = document.getElementById("dropdownd_img").value
+            let image = document.getElementById("image");
+
+            if (drop_img == "jenni"){
+                image.setAttribute("src","gambar.jpeg");
+                alert("ini gambar jenni");
+
+            } else if (drop_img == "rose"){
+                image.setAttribute("src","gambar2.jpeg");
+                alert("ini gambar Rose");
+
+            } else if (drop_img == "jiso"){
+                image.setAttribute("src","gambar3.jpg");
+                alert("ini gambar jisoo");
+            }
+        }
+    </script>
+</head>
+<body>
+   <select id="dropdownd_img" onchange="gambar()">
+    <option hidden>---Pilihan Gambar---</option>
+    <option value="jenni">Jenni</option>
+    <option value="rose">Rose</option>
+    <option value="jiso">Jisoo</option>
+   </select> 
+   <br />
+   <img id="image"/>
+</body>
+</html>

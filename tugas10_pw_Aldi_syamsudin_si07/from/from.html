@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="from.css">
+    <script src="from.js" defer></script>
+</head>
+<body>
+    <form class="form" id="form" method="get">
+        <h1>Aldi Syamsudin si07</h1>
+        <div class="control">
+            <label for="name">Nama Pelanggan</label>
+            <input id="username" name="name" type="text" maxlength="30">
+            <small>Nama Salah</small> 
+        </div>
+        <div class="control">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="name" required>
+            <small>email salah</small>
+        </div>
+        <div class="control">
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password"> 
+            <small>password salah</small>
+        </div>
+        <div class="control">
+            <label for="time">Jam Berangkat</label>
+            <input id="time" name="time" type="time">
+            <small>jam Berangkat salah</small>
+        </div>
+        <div class="control">
+            <label for="tujuan">Tujuan keberangkatan</label>
+            <input id="tujuan" name="name" type="text">
+            <small>tujuan keberangkatan salah</small>
+        </div>
+        <div class="control">
+            <label for="number">jumlah tiket</label>
+            <input id="number" name="name" type="number" max="10">
+            <small>jumlah tiket salah</small>
+        </div>
+        <button type="submit" id="submit">submit</button>
+    </form>
+</body>
+</html>
